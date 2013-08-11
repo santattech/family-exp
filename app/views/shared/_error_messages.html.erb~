@@ -1,0 +1,4 @@
+<% if @user.errors.any? %>
+
+
+<% end %>
