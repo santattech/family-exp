@@ -3,4 +3,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-FamilyExp::Application.load_tasks
+MultiApp::Application.load_tasks
