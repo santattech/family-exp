@@ -1,0 +1,14 @@
+@import "bootstrap";
+@media (min-width: 1000px){
+.container, .navbar-fixed-top .container, .navbar-fixed-bottom .container {
+ width: 960px;
+}
+}
+body {
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  line-height: 18px;
+  padding-top: 60px;
+  font-size: 13px;
+}
+
