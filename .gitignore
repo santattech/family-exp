@@ -14,3 +14,11 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+# Ignore the database file
+/config/database.yml
+
+#Ignore the backup files
+\#*#
+# Ignore temp files
+*~
+*#
