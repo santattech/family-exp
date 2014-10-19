@@ -7,7 +7,6 @@ module SessionsHelper
     else
       cookies[:remember_token] = remember_token
     end
-
     user.update_attribute(:remember_token, User.encrypt_remember_token(remember_token))
     self.current_user = user
   end

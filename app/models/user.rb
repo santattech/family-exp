@@ -1,9 +1,12 @@
 class User < ActiveRecord::Base
+  attr_accessible :email, :password, :password_confirmation
+  VALID_EMAIL = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
 
-  #validates :first_name, :presence => true, length: { maximum: 30}
-  validates :email, :presence => true, :uniqueness => { case_sensitive: false}
+  validates :email, presence: true, format: { with: VALID_EMAIL }, uniqueness: { case_sensitive: false }
+  validates :password, presence: true, length: { minimum: 6 }
+  validates :password_confirmation, presence: true
+
   has_secure_password
-  validates :password, :length => { minimum: 6}
 
   before_save :email_in_small
   before_create :create_remember_token

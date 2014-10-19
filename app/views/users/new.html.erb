@@ -2,16 +2,18 @@
 <div class="row">
   <%= form_for @user do |f| %>
   <%= render 'shared/error_messages' %>
-    <p><%= f.label :email %>
+  <p>
+    <%= f.label :email %>
     <%= f.text_field :email %>
-</p><p>
+  </p>
+  <p>
     <%= f.label :password %>
     <%= f.password_field :password %>
-</p><p>
+  </p>
+  <p>
     <%= f.label :password_confirmation %>
     <%= f.password_field :password_confirmation %>
     <%= f.submit "Create my account" %>
-</p>
+  </p>
   <% end %>
-
 </div>
