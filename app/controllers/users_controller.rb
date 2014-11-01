@@ -5,7 +5,6 @@ class UsersController < ApplicationController
 
   def new
     @user = User.new
-    #TO DO: code clean up for bootstrap view
   end
 
   def create
